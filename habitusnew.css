@@ -1,0 +1,105 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a pastel background color to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color:palevioletred;  /* Light grey pastel background */
+    color: #4E4E4E; /* Dark grey text */
+    padding: 20px;
+}
+
+/* Main container for the content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #FFFFFF; /* White background for content */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #c79ee2; /* Light pastel pink */
+    margin-bottom: 20px;
+}
+
+/* Habit input section */
+h2 {
+    font-size: 24px;
+    color: #510fcc; /* Pastel lavender */
+    margin-bottom: 10px;
+}
+
+/* Input field and button styles */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 2px solid #075333; /* Pastel lavender border */
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #FFB6C1; /* Light pink border on focus */
+}
+
+button {
+    background-color: #B4E7D9; /* Pastel teal */
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #A1D6C7; /* Slightly darker pastel teal */
+}
+
+/* Styling for the progress section */
+#habit-progress {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #F3E5F5; /* Light pastel lavender */
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Styling for the progress status */
+.progress-item {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #4E4E4E;
+    font-weight: bold;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    input[type="text"], button {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
