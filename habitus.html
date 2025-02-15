@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Habit Tracker</h1>
+        </header>
+        
+        <section class="form-section">
+            <h2>Set Your Habit</h2>
+            <form id="habitForm">
+                <label for="habitName">Enter Habit:</label>
+                <input type="text" id="habitName" placeholder="e.g., Drink Water" required>
+                
+                <button type="submit" class="submit-btn">Start Habit</button>
+            </form>
+        </section>
+
+        <section class="tracking-section">
+            <h2>Track Your Progress</h2>
+            <div id="trackingMessage"></div>
+            <button id="completeHabitBtn" class="submit-btn">Mark Habit as Completed Today</button>
+            <button id="loseHabitBtn" class="submit-btn">Mark Habit as Failed</button>
+            <div id="habitProgress">
+                <h3>Progress</h3>
+                <ul id="progressList"></ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
