@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habitus - Minimal Habit Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <h1>Habitus</h1>
+      <p>Build one small habit in 21 days.</p>
+    </header>
 
+    <section class="add-habit-card">
+      <form id="habit-form">
+        <label for="habit-input">Add a habit</label>
+        <div class="input-row">
+          <input id="habit-input" type="text" placeholder="Drink 2L water" maxlength="60" required>
+          <button type="submit">Add</button>
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <ul id="habit-list" class="habit-list" aria-live="polite"></ul>
+      <p id="empty-state" class="empty-state">No habits yet. Add your first one.</p>
+    </section>
+  </main>
+
+  <template id="habit-item-template">
+    <li class="habit-item">
+      <div class="habit-main">
+        <h2 class="habit-name"></h2>
+        <p class="progress-text"></p>
+        <div class="progress-track">
+          <div class="progress-fill"></div>
+        </div>
+      </div>
+      <div class="habit-actions">
+        <button class="done-btn" type="button">Mark Done</button>
+        <button class="delete-btn" type="button">Delete</button>
+      </div>
+    </li>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
